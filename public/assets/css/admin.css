@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+html, body{
+    height: 100%;
+}
+
+a, button{
+    cursor: pointer;
+}
+@keyframes pan {
+   100% {background-position: 15% 50%;}
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background:  #f2f2f2;
+    margin: 0;
+    padding: 0 24px;
+}
+@media(width >=500px){
+    body{
+        padding: 0;
+    }
+}
+.login-card{
+    width: 100%;
+    padding: 70px 30px 44px;
+    border-radius: 24px;
+    background: #FFFF;
+    text-align: center;
+}
+@media(width >=500px){
+    .login-card{
+        margin: 0;
+        width: 400px;
+    }
+}
+.login-card > h2{
+    margin: 0 0 12px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.login-card > h3{
+    margin: 0 0 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.38);
+}
+.login-form{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16PX;
+}
+.login-form > a{
+    color: #216CE7;
+    text-decoration: none;
+}
+.login-form > input, .login-form > button{
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    border-radius: 8px;
+}
+.login-form > input {
+    border: 2px solid #EDEBEB;
+}
+
+.login-form > button{
+    width: 100%;
+    height: 56px;
+    border: 0;
+    background: #216CE7;
+    color: #F9F9F9;
+    font-weight: 600;
+}

@@ -1,0 +1,22 @@
+$('#saveEditBtn').click(function(e) {
+                            e.preventDefault();
+                            var id = event.id;
+                            var data = {
+                                'DocName': $('#editDocName').val(),
+                                'plan_date': $('#edit-plan-date').val(),
+                                'start_time': $('#edit-start-hour').val(),
+                                'end_time': $('#edit-end-hour').val()
+                            }
+                            console.log(id);
+                            $.ajax({
+/*                                 url:"{{ route('planning.update' , '') }}"+'/'+id,
+ */                                type:"PUT",
+                                dataType:'json',
+                                success:function(response){
+                                    swal("Good job!", "plan modifier", "success");
+                                }
+                                
+                            });
+                            
+                            var id = null;
+                        });
